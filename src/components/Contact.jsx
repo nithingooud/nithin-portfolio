@@ -84,9 +84,9 @@ const Contact = () => {
         <div className='relative z-0 bg-black w-screen h-screen mt-12'>
             
 		<div className='text-white contact overflow-x-hidden py-12 mt-8 ' id='contact'>
-			<div className='z-10 w-full sm:w-[650px] m-auto p-8 rounded-2xl' style={{ background: '#120d2b' }}>
+			<div className='z-10 w-full sm:w-[650px] m-auto p-8 rounded-2xl' >
 				<p className='font-light'>REACH OUT TO ME</p>
-				<h2 className='text-5xl font-extrabold mt-2'>Contact.</h2>
+				<h2 className='text-5xl font-extrabold mt-2 bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-pink-500'>Contact.</h2>
 				<form
 					ref={formRef}
 					onSubmit={handleSubmit}
@@ -99,9 +99,8 @@ const Contact = () => {
 							name='name'
 							value={form.name}
 							onChange={handleChange}
-							placeholder="What's your good name?"
-							className='py-4 px-6 rounded-lg outline-none border-none font-medium'
-							style={{ background: '#1d1836' }}
+							placeholder="Enter your name"
+							className='py-4 px-6 rounded-lg outline-none border-none font-medium bg-gray-900'
 							required
 						/>
 					</label>
@@ -112,9 +111,8 @@ const Contact = () => {
 							name='email'
 							value={form.email}
 							onChange={handleChange}
-							placeholder="Please enter your email."
-							className='py-4 px-6 rounded-lg outline-none border-none font-medium'
-							style={{ background: '#1d1836' }}
+							placeholder="Ex:abc@gmail.com"
+							className='py-4 px-6 rounded-lg  font-medium bg-gray-900'
 							required
 						/>
 					</label>
@@ -126,16 +124,14 @@ const Contact = () => {
 							value={form.message}
 							onChange={handleChange}
 							placeholder='Do you have anything to say?'
-							className='py-4 px-6 rounded-lg outline-none border-none font-medium'
-							style={{ background: '#1d1836' }}
+							className='py-4 px-6 rounded-lg outline-none border-none font-medium bg-gray-900'
 							required
 						/>
 					</label>
 
 					<button
 						type='submit'
-						className='py-3 px-8 rounded-xl outline-none w-fit font-bold shadow-md'
-						style={{ background: '#1d1836' }}
+						className='py-3 px-8 rounded-xl outline-none w-fit font-bold shadow-md bg-gray-900'
 					>
 						{loading ? "Sending..." : "Send"}
 					</button>

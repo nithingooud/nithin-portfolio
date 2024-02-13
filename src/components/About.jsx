@@ -28,11 +28,11 @@ const About = () => {
     <div className='bg-black h-full w-full text-white sm:flex sm:justify-around about py-12 mt-8 overflow-x-hidden' id='about'>
       <div className='flex flex-col justify-around'>
         <div className='sm:px-16 px-2'>
-          <p className='font-light'>INTRODUCTION.</p>
-          <h2 className='text-4xl sm:text-5xl font-extrabold mt-2'>Overview.</h2>
-          <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>Hello World, This is Nithin Manda. I am a 2023 B.Tech ECE graduate 🎓. I have got an emotion for computers 💘. I am a <a className='text-yellow-200 hover:text-yellow-300 duration-300' href='https://www.linkedin.com/in/nithin-manda-728019214/' target='_blank'>Software Engineer</a> experienced in building robust backend systems and wonderful frontend web and mobile applications 🚀. I am an open-source enthusiast and a competitive programmer. 
-          I write tech blogs on <a className=' text-purple-300 hover:text-purple-400 duration-300' href="https://medium.com/@goudnithin77" target='_blank'>Medium.</a> 
-          Apart from coding my hobbies are photographer📸.</p>
+          <h2 className='text-4xl sm:text-5xl font-extrabold mt-2'>Introduction</h2>
+          <p className='mt-3 mb-6 text-[17px] max-w-3xl leading-[30px]'>👨‍💻 Hi, I'm Manda Nithin, a 2023 graduate🎓 with a passion for crafting robust backend systems and captivating mobile applications.As a seasoned <a className='text-green-300 hover:text-green-500 duration-300' href='https://www.linkedin.com/in/nithin-manda-728019214/' target='_blank'>Software developer</a> I specialize in both MEAN and MERN stacks🚀. 
+          <br/>
+          ✍️ Beyond coding, I love sharing my insights and experiences through engaging blogs on <a className=' text-purple-300 hover:text-purple-400 duration-300' href="https://medium.com/@goudnithin77" target='_blank'>Medium</a>, where I delve into the intricacies of software development and technology trends.
+          On a different note, I'm also into photography📸. It's not just a hobby; I see it as a way to capture moments🌟📷, tell stories.</p>
 
           <ButtonLink
             url='https://docs.google.com/document/d/14H0FDivvmYsD8k9MIAPx4qi-9l4JXS4HrrlmE0gYGE4/edit?usp=sharing'

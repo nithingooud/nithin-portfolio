@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Background from './Background';
 import Footer from './Footer';
 
-const Hero = () => {
+const Home = () => {
 
 	const ref = useRef(0);
 	const [text, setText] = useState('');
@@ -21,21 +21,28 @@ const Hero = () => {
 	}, [text]);
 
 	return (
-		<>
-        <div className='relative z-0 bg-black w-screen h-screen'>
-        
-            <div className='hero relative h-[calc(100vh+4rem)] flex justify-center items-center text-white' id='hero'>
-                <div className='px-4 h-36 backdrop-blur-sm rounded-3xl'>
-                    <h1 className='text-6xl sm:text-7xl font-extrabold mt-2'>Hi, I'm&nbsp;<span className='text-purple-600 font-extrabold'>{text}</span></h1>
-                    <p className='mt-3 text-xl'>I love to learn and build scalable and optimized backend systems.</p>
-                </div>
-                
-            </div>
-            <Background/>
-       </div>
-	 
-		</>
+		<div className='area relative z-0 bg-black w-screen h-screen'>
+			<ul class="circles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div className='hero relative h-[calc(100vh)] flex justify-center items-center text-white' id='hero'>
+				<div className='pt-4 h-36 backdrop-blur-sm rounded-3xl'>
+					<h1 className='text-6xl sm:text-7xl font-extrabold mt-2'>Hi, I'm&nbsp;<span className='text-yellow-200 font-extrabold'>{text}</span></h1>
+					<p className='mt-3 text-xl'>I love to learn and build scalable and optimized backend systems.</p>
+				</div>      
+			</div>
+			<Footer/>
+		</div>	
 	);
 }
 
-export default Hero;
+export default Home;

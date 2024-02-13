@@ -2,10 +2,11 @@
 import React from "react";
 import vpn from '../assets/vpn.png'
 import copeople from '../assets/copeople.png'
+import Footer from './Footer'
 
 const ProjectCard = ({ image, title, description, git, technologies }) => {
     return (
-        <div className="max-w-sm sm:max-w-xl md:max-w-xl bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="max-w-sm sm:max-w-sm md:max-w-sm bg-gray-900 border border-neutral-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             {title=='Snap Shot' && <a href="#">
                 <img className="w-full rounded-t-lg h-auto object-cover " src={vpn} alt="" />
             </a>}
@@ -37,8 +38,8 @@ const ProjectCard = ({ image, title, description, git, technologies }) => {
   
 const Projects = () => {
     return (
-        <div className="h-screen bg-black">
-            <div className="flex flex-wrap gap-7 items-center m-12 p-12">
+        <div className="bg-black">
+            <div className="flex flex-wrap gap-7 justify-center items-center m-12 p-12">
                 {project.map((item, index) => (
                     <ProjectCard
                         key={index}
@@ -51,6 +52,7 @@ const Projects = () => {
                     />
                 ))}
             </div>
+            <Footer/>
         </div>
     );
 }

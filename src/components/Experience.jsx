@@ -1,13 +1,14 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { experiences, companyColors } from '../constants';
+import { experiences } from '../constants';
+import Footer from './Footer';
 
 
 const Experience = () => {
   return (
-    <div className='experience bg-black w-screen text-white px-4 py-16' id='experience'>
-      <div className='px-2 sm:px-16'>
+    <div className='experience bg-black w-screen text-white pt-4 pt-16 overflow-x-hidden' id='experience'>
+      <div className='pt-12 sm:px-16'>
         <p className='font-light'>MY JOURNEY SO FAR.</p>
         <h2 className='text-4xl sm:text-5xl font-extrabold mt-2'>Work Experience.</h2>
       </div>
@@ -52,6 +53,7 @@ const Experience = () => {
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
+      <Footer/>
     </div>
   )
 }

@@ -22,7 +22,6 @@ root.render(
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
-      <Footer/>
     </BrowserRouter>
 );
 

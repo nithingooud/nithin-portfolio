@@ -1,4 +1,3 @@
-## Getting Started with Create React App
 
 ## Cloning an React project and running locally
 

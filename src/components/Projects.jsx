@@ -60,18 +60,18 @@ const Projects = () => {
 
 export const project = [
     {
-        title:'Co People',
-        description:'Co People is a dynamic web application I crafted using React, Node JS and React. This project is a modern and engaging social platform that allows users to connect, share content and interact seamlessly.',
-        image: {vpn},
-        git:'https://github.com/nithingooud/CoPeople',
-        technologies:['MongoDb' ,'ReactJS' , 'NodeJS']
+        title:'ansible-webapp-deploy',
+        description:'This project showcases how to use Ansible for automating the deployment of a simple web application on an AWS EC2 instance. It includes provisioning the EC2 instance, installing necessary software (Nginx), deploying a web application, and configuring the server.',
+        image: {anisble-webapp-deploy},
+        git:'https://github.com/HimaBindu-munagapati/ansible-webapp-deploy',
+        technologies:['Anisble' 'Ngnix' 'AWS EC2'] 
     },
     {
-        title:'Snap Shot',
-        description:'SnapShot is a stunning portfolio that I exclusively designed using React JS and tailwind CSS.This Project serves as a representation of a photographer’s work, highlighting their portfolio and services.',
-        image: {copeople},
-        git:"https://github.com/nithingooud/vpn_studios",
-        technologies:[ 'React JS', 'tailwind CSS']
+        title:'sample Jenkins project',
+        description:'This project demonstrates a simple "Hello World" application built and deployed using Jenkins. The primary goal is to showcase the basic integration of Jenkins with a simple application build and deployment pipeline.',
+        image: {Jenkins},
+        git:"https://github.com/HimaBindu-munagapati/SampleJenkins",
+        technologies:[ 'Jenkins', 'Git' 'Java']
     }
 ]
 

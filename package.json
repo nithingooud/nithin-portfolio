@@ -1,16 +1,18 @@
 {
-  "name": "portfolio-nithin",
+  "name": "portfolio-Awaneesh",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emailjs/browser": "^4.1.0",
+    "@emailjs/browser": "^4.4.1",
     "@react-three/drei": "^9.97.5",
     "@react-three/fiber": "^8.15.16",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "flowbite": "^2.2.1",
+    "formidable": "^3.5.2",
     "framer-motion": "^11.0.3",
+    "nodemailer": "^6.9.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
@@ -18,11 +20,12 @@
     "react-scripts": "5.0.1",
     "react-toastify": "^10.0.4",
     "react-vertical-timeline-component": "^3.6.0",
+    "upper-case": "^2.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -45,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "tailwindcss": "^3.4.1"
   }
 }
